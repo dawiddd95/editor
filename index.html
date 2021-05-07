@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tooltip</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" 
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    </head>
+    <body>
+
+        <div class='wrapper'>
+            <div class='wrapper__buttons'>
+                <app-button class='btn' icon='fas fa-bold' title='Pogrubienie' data-command='bold'></app-button>
+                <app-button class='btn' icon='fas fa-italic' title='Pochylenie' data-command='italic'></app-button>
+                <app-button class='btn' icon='fas fa-list-ol' title='Uporządkowana lista' data-command='insertOrderedList'></app-button>
+                <app-button class='btn' icon='fas fa-list-ul' title='Nieuporządkowana lista' data-command='insertUnorderedList'></app-button>
+            </div>
+            <pre id="output" contenteditable="true" data-name="note"></pre>
+        </div>
+        <a href="" class='save'>Save</a>
+        <input class='load' type="file" name="inputfile" id="inputfile">
+        
+        <script src="components/Button.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>
